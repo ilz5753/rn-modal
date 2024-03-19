@@ -46,7 +46,7 @@ const Modal = memo(
         backdrop = tr,
         bg = "white",
         borderRadius = 24,
-        dismisable = false,
+        dismisable = true,
         isBackdropLight = false,
         isLightMode = false,
         innerPadding = borderRadius / 2,
@@ -106,7 +106,7 @@ const Modal = memo(
         ],
       }));
       let ot = useMemo(
-        () => Gesture.Tap().onStart(runOnJS(close)).enabled(!dismisable),
+        () => Gesture.Tap().onStart(runOnJS(close)).enabled(dismisable),
         [dismisable, close]
       );
       let it = useMemo(() => Gesture.Tap().onStart(() => {}), []);
