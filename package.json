@@ -1,5 +1,6 @@
 {
   "name": "@ilz5753/rn-modal",
+  "version": "0.0.1",
   "description": "React Native Modal re-implemented using gesture handler and reanimated",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
